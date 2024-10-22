@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* .roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+} */
+
+.video-parent:first-child,
+.video-parent div {
+  height: 100% !important;
+  max-height: 1000px;
+}
+
+.video-parent video {
+  object-fit: cover;
+}
+
+.enquirenow-button {
+  background-color: transparent !important;
+  width: 80%;
+  text-align: center;
+}
+
+.enquire-container {
+  justify-content: center !important;
+  bottom: 7rem !important;
+}
+
+video-js,
+video,
+.vjs-poster {
+  object-fit: cover;
+}
+
+.vjs-loading-spinner {
+  display: none !important;
+}

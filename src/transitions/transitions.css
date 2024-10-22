@@ -1,0 +1,79 @@
+/* BC logo Splash */
+.bc-splash-enter,
+.bc-splash-appear {
+  opacity: 0;
+  transform: scale(0.4);
+}
+.bc-splash-enter-active,
+.bc-splash-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.bc-splash-exit {
+  opacity: 1;
+}
+.bc-splash-exit-active {
+  opacity: 0;
+  transform: scale(0.4);
+  transition: opacity 500ms, transform 300ms;
+}
+
+/* button opacity */
+.bc-opacity-enter,
+.bc-opacity-appear {
+  opacity: 0;
+}
+.bc-opacity-enter-active,
+.bc-opacity-appear-active {
+  opacity: 1;
+
+  transition: opacity 900ms, transform 300ms;
+}
+.bc-opacity-exit {
+  opacity: 1;
+}
+.bc-opacity-exit-active {
+  opacity: 0;
+
+  transition: opacity 900ms, transform 300ms;
+}
+
+/* transition UP */
+.bc-controlbar-enter,
+.bc-controlbar-appear {
+  transform: translateY(100px);
+}
+.bc-controlbar-enter-active,
+.bc-controlbar-appear-active {
+  transform: translate(0);
+  transition: transform 200ms;
+  /* transition: opacity 900ms, transform 300ms; */
+}
+.bc-controlbar-exit {
+  transform: translateY(100px);
+}
+.bc-controlbar-exit-active {
+  opacity: 0;
+
+  transition: opacity 900ms, transform 300ms;
+}
+/* transition UP */
+.bc-viewer-enter,
+.bc-viewer-appear {
+  transform: scale(0.1);
+}
+.bc-viewer-enter-active,
+.bc-viewer-appear-active {
+  transform: translate(0);
+  transition: all 200ms ease-in;
+  /* transition: opacity 900ms, transform 300ms; */
+}
+.bc-viewer-exit {
+  transform: scale(0.1);
+}
+.bc-viewer-exit-active {
+  opacity: 0;
+
+  transition: opacity 900ms, transform 300ms;
+}
